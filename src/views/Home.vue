@@ -12,14 +12,14 @@ export default {
   name: 'Home',
   components: { PxAssetsTable },
 
-  data () {
+  data() {
     return {
-      assets: []
+      assets: [],
     }
   },
 
-  created () {
-    api.getAssets().then((assets) => (this.assets = assets));
-  }
+  created() {
+    api.getAssets().then((assets) => (this.assets = assets))
+  },
 }
 </script>
